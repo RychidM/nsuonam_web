@@ -1,35 +1,99 @@
 <nav class="app__navbar">
 	<div class="app__navbar-logo">
-		<a href="">
-		<img src={{images.nsuonam}}
-			alt="app logo"></a>
+		<a href>
+			<img src={{images.nsuonam}}
+				alt="app logo">
+		</a>
 	</div>
 	<ul class="app__navbar-links">
-		<li class="p__opensans">
-			<a href>Home</a>
-		</li>
-		<li class="p__opensans">
-			<a href>About</a>
-		</li>
-		<li class="p__opensans">
+		<li class="p__tenorSans">
 			<a href>Menu</a>
 		</li>
-		<li class="p__opensans">
-			<a href>Contact</a>
+		<li class="p__tenorSans">
+			<a href>Bookings</a>
+		</li>
+		<li class="p__tenorSans">
+			<a href>Events</a>
+		</li>
+		<li class="p__tenorSans">
+			<a href>Lake Volta Bar</a>
+		</li>
+		<li class="p__tenorSans">
+			<a href>Gallery</a>
+		</li>
+		<li class="p__tenorSans">
+			<a href>Press</a>
+		</li>
+		<li class="p__tenorSans">
+			<a href>About Us</a>
 		</li>
 	</ul>
-	<div class="app__navbar-login">
-		<a href
-			class="p__opensans">
-			Log In / Register
+
+	<div class="app__navbar-socials">
+		<a href="#">
+			<i class="fa-brands fa-instagram"
+				style="color: #ecc609;">
+			</i>
 		</a>
 		<div></div>
-		<a href
+		<a href="#">
+			<i class="fa-brands fa-tiktok"
+				style="color: #ecc609;">
+			</i>
+		</a>
+		<!-- <a href
+			class="p__opensans">
+			Log In / Register
+		</a> -->
+		<!-- <div></div> -->
+		<!-- <a href
 			class="p__opensans">
 			Reserve a table
-		</a>
+		</a> -->
 	</div>
 	<div class="app__navbar-smallscreen">
-		 
+		<i *ngIf="!isMenuOpened"
+			(click)="showBurgerMeu(isMenuOpened)"
+			class="fa-solid fa-bars-staggered"
+			style="color: #ebebeb;"></i>
+
+		<div *ngIf="isMenuOpened"
+			class="app_navbar-smallscreen_overlay flex__center slide-bottom">
+			<i (click)="showBurgerMeu(isMenuOpened)"
+				class="fa-solid fa-xmark overlay__close"
+				style="color: #ebebeb;"></i>
+			<ul class="app__navbar-smallscreen-links">
+				<li class="p__tenorSans">
+					<a href>Menu</a>
+				</li>
+				<li class="p__tenorSans">
+					
+					<a href>Bookings</a>
+				</li>
+				
+					<li class="p__tenorSans">
+						<div class="r__link">
+						<a href>Events</a>
+					<i class="fa-solid fa-angle-down" style="color: #ebebeb;"></i>
+				</div>
+					</li>
+				<li class="p__tenorSans">
+					<a href>Lake Volta Bar</a>
+				</li>
+				<li class="p__tenorSans">
+					<a href>Gallery</a>
+				</li>
+				<li class="p__tenorSans">
+					<a href>Press</a>
+				</li>
+					<li class="p__tenorSans">
+						<div class="r__link">
+						<a href>About Us</a>
+					<i class="fa-solid fa-angle-down" style="color: #ebebeb;"></i>
+					</div>
+					</li>
+			</ul>
+		</div>
+
 	</div>
 </nav>

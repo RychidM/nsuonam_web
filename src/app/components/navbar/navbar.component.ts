@@ -7,5 +7,12 @@ import images from '@constants/images';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  isMenuOpened: boolean = false;
   images = images;
+
+
+showBurgerMeu(isClosed: boolean) {
+this.isMenuOpened = isClosed ? false : true;
+}
+
 }

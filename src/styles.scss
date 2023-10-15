@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap&family=Tenor+Sans&display=swap');
 
 :root {
   --font-base: 'Cormorant Upright', serif;
   --font-alt: 'Open Sans', sans-serif;
+  --tenor-font: 'Tenor Sans', sans-serif;
   
   --color-golden: #DCCA87;
   --color-black: #0C0C0C;
@@ -139,6 +140,16 @@ a {
     text-transform: capitalize;
     line-height: 28px;
     font-size: 16px;
+  }
+
+  .p__tenorSans {
+    font-family: var(--tenor-font);
+    color: var(--color-white);
+    // font-weight: 400;
+    letter-spacing: 0.04em;
+    // text-transform: capitalize;
+    line-height: 28px;
+    font-size: 1rem;
   }
   
   .headtext__cormorant {
