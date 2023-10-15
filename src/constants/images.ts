@@ -20,6 +20,8 @@ const award05 = '../assets/award05.png';
 const sign = '../assets/sign.png';
 const quote = '../assets/quote.png';
 const nsuonam = '../assets/nsuomNam.png';
+const n = '../assets/n.png';
+const sushi = '../assets/sushi.png';
 
 export default {
   bg,
@@ -44,5 +46,6 @@ export default {
   sign,
   quote,
   nsuonam,
-}
-
+  n,
+  sushi,
+};
