@@ -11,8 +11,8 @@ export class NavbarComponent {
   images = images;
 
 
-showBurgerMeu(isClosed: boolean) {
-this.isMenuOpened = isClosed ? false : true;
+showBurgerMeu() {
+this.isMenuOpened = !this.isMenuOpened;
 }
 
 }
