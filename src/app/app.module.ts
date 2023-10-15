@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { SpecialMenuComponent } from './components/special-menu/special-menu.component';
+import { SubHeadingComponent } from './shared/components/sub-heading/sub-heading.component';
+import { MenuItemComponent } from './shared/components/menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     NavbarComponent,
     HeaderComponent,
     AboutUsComponent,
+    SpecialMenuComponent,
+    SubHeadingComponent,
+    MenuItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

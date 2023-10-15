@@ -1,0 +1,31 @@
+<div class="app__specialMenu flex__center section__padding" id="Menu">
+    <div class="app__specialMenu-title">
+        <app-sub-heading title="Menu That Fits You Pallate"></app-sub-heading>
+        <h1 class="headtext__cormorant">Today's Special</h1>
+    </div>
+
+    <div class="app__specialMenu-menu">
+        <div class="app__specialMenu-menu_starters flex__center">
+            <p class="app__specialMenu-menu_heading">Starters</p>
+            <div class="app__specialMenu_menu_items">
+                <app-menu-item *ngFor="let starter of starterMenu" title={{starter.title}} price={{starter.price}} tag={{starter.tags}}></app-menu-item>
+            </div>
+        </div>
+
+        <div class="app__specialMenu-menu_img">
+            <img src="{{images.sushi}}" alt="menu img">
+        </div>
+
+        <div class="app__specialMenu-menu_gelatoes flex__center">
+            <p class="app__specialMenu-menu_heading">Gelatoes & Disserts</p>
+            <div class="app__specialMenu_menu_items">
+                <app-menu-item *ngFor="let gelato of gelatoMenu" title={{gelato.title}} price={{gelato.price}} tag={{gelato.tags}}></app-menu-item>
+                
+            </div>
+        </div>
+    </div>
+
+    <div [ngStyle]="{ 'marginTop': '15px' }">
+        <button type="button" class="custom__button">See Full Menu</button>
+    </div>
+</div>
