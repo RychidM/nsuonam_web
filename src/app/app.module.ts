@@ -9,6 +9,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { SpecialMenuComponent } from './components/special-menu/special-menu.component';
 import { SubHeadingComponent } from './shared/components/sub-heading/sub-heading.component';
 import { MenuItemComponent } from './shared/components/menu-item/menu-item.component';
+import { ChefSectionComponent } from './components/chef-section/chef-section.component';
+import { VideoSectionComponent } from './components/video-section/video-section.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { MenuItemComponent } from './shared/components/menu-item/menu-item.compo
     SpecialMenuComponent,
     SubHeadingComponent,
     MenuItemComponent,
+    ChefSectionComponent,
+    VideoSectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
