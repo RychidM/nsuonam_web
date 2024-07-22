@@ -1,58 +1,60 @@
 import images from './images';
 
-const wines = [
+const cediSymbol  = '\u20B5';
+
+const starters = [
   {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: 'AU | Bottle',
+    title: 'Chilli Crab Crust',
+    price: `${cediSymbol} 187`,
+    tags: 'Contains Shellfish',
   },
   {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: 'AU | Bottle',
+    title: 'Guinea Fowl Balls',
+    price: `${cediSymbol} 140`,
+    tags: 'No Shellfish',
   },
   {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: 'FR | 750 ml',
+    title: 'Popcorn Shrimps',
+    price: `${cediSymbol} 176`,
+    tags: 'Contains Shellfish',
   },
   {
-    title: 'Rhino Pale Ale',
-    price: '$31',
-    tags: 'CA | 750 ml',
+    title: 'Smoked Shark Quiche',
+    price: `${cediSymbol} 176`,
+    tags: 'No Shellfish',
   },
   {
-    title: 'Irish Guinness',
-    price: '$26',
-    tags: 'IE | 750 ml',
+    title: 'Crispy Calamari',
+    price: `${cediSymbol} 165`,
+    tags: 'Contains Shellfish',
   },
 ];
 
-const cocktails = [
+const gelatoes = [
   {
-    title: 'Aperol Sprtiz',
-    price: '$20',
-    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
+    title: 'Tiger Nuts Treats',
+    price:  `${cediSymbol} 200`,
+    tags: '3 scoops served with plantain churros',
   },
   {
-    title: "Dark 'N' Stormy",
-    price: '$16',
-    tags: 'Dark rum | Ginger beer | Slice of lime',
+    title: "Sassy Hibiscus & Chilli",
+    price: `${cediSymbol} 200`,
+    tags: ' 3scoops served with chocolate cookies',
   },
   {
-    title: 'Daiquiri',
-    price: '$10',
-    tags: 'Rum | Citrus juice | Sugar',
+    title: 'Palm Wine Bliss',
+    price: `${cediSymbol} 200`,
+    tags: '3 scoops served with roasted mango',
   },
   {
-    title: 'Old Fashioned',
-    price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
+    title: 'Sweetcorn Delights',
+    price: `${cediSymbol} 200`,
+    tags: '3 scoops served with palm nut tuiles',
   },
   {
-    title: 'Negroni',
-    price: '$26',
-    tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
+    title: 'Chocolate Brownie',
+    price: `${cediSymbol} 132`,
+    tags: 'Ashanti dark chocolate brownie | candied fruits | Madagascar vanilla custard',
   },
 ];
 
@@ -79,4 +81,4 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards };
+export default { starters, gelatoes, awards };
