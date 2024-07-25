@@ -11,6 +11,7 @@ import { SubHeadingComponent } from './shared/components/sub-heading/sub-heading
 import { MenuItemComponent } from './shared/components/menu-item/menu-item.component';
 import { ChefSectionComponent } from './components/chef-section/chef-section.component';
 import { VideoSectionComponent } from './components/video-section/video-section.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { VideoSectionComponent } from './components/video-section/video-section.
     MenuItemComponent,
     ChefSectionComponent,
     VideoSectionComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
